@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "649966460288",
+    "firebase_url": "https://mykeikoapp-default-rtdb.firebaseio.com",
+    "project_id": "mykeikoapp",
+    "storage_bucket": "mykeikoapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649966460288:android:91ba3a2842d004306bf565",
+        "android_client_info": {
+          "package_name": "flutter.yaml"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7XFjPZTilwjnBmZj-S-OOu_Mb90ihLT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
