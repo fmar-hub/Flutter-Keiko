@@ -12,7 +12,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^2.18.0 # Asegúrate de usar la última versión disponible
+  firebase_core: ^2.32.0
   firebase_auth: ^4.8.0 # Asegúrate de usar la última versión disponible
   cupertino_icons: ^1.0.8
   cloud_firestore: ^4.5.0
