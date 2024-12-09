@@ -3,41 +3,6 @@ name: Build Flutter APK
 on:
   push:
     branches:
-<<<<<<< HEAD
-      - main  # Ejecutar cuando hagas un push a la rama principal (puedes cambiarla si usas otra)
-  pull_request:
-    branches:
-      - main  # Ejecutar en pull request a la rama principal
-
-jobs:
-  build:
-    runs-on: ubuntu-latest  # Usamos Ubuntu como sistema operativo
-
-    steps:
-      # Paso 1: Configurar Flutter
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.5.4'  # Usa la versión que necesites de Flutter
-
-      # Paso 2: Instalar dependencias de Flutter
-      - name: Install dependencies
-        run: flutter pub get
-
-      # Paso 3: Ejecutar la compilación para la APK
-      - name: Build APK
-        run: flutter build apk --release  # Cambia el tipo de build si lo necesitas (debug, profile, release)
-
-      # Paso 4: Subir el APK como artefacto (opcional)
-      - name: Upload APK
-        uses: actions/upload-artifact@v2
-        with:
-          name: flutter-apk
-          path: build/app/outputs/flutter-apk/app-release.apk  # Ruta de salida del APK
-=======
       - main
   pull_request:
     branches:
@@ -71,4 +36,3 @@ jobs:
         with:
           name: flutter-apk
           path: build/app/outputs/flutter-apk/app-release.apk
->>>>>>> bead458eeaea04d93929ae91ea1a9de8319bc506
