@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:649966460288:android:91ba3a2842d004306bf565",
         "android_client_info": {
-          "package_name": "flutter.yaml"
+          "package_name": "com.example.flutter_keiko"
         }
       },
       "oauth_client": [],
