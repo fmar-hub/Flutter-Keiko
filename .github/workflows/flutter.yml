@@ -16,25 +16,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install Flutter
+      - name: Set up Flutter
         run: |
           git clone -b stable https://github.com/flutter/flutter.git
           echo "$GITHUB_WORKSPACE/flutter/bin" >> $GITHUB_PATH
-          flutter --version
+          flutter/bin/flutter --version
 
       - name: Switch to stable channel
-        run: flutter channel stable
-
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.5.4'
+        run: flutter/bin/flutter channel stable
 
       - name: Install dependencies
-        run: flutter pub get
+        run: flutter/bin/flutter pub get
 
       - name: Build APK
-        run: flutter build apk --release
+        run: flutter/bin/flutter build apk --release
 
       - name: Upload APK
         uses: actions/upload-artifact@v3
